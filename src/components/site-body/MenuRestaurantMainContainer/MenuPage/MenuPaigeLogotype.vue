@@ -16,7 +16,7 @@ let color = "#000"
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  height: 3px;
+  height: 2px;
   margin-bottom: 16px;
 
 }

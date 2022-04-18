@@ -22,5 +22,6 @@ const props = defineProps({
 .menu-page-top{
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #d6d6d6;
 }
 </style>

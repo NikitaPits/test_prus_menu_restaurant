@@ -11,7 +11,7 @@
 <script setup>
 import SiteHeaderMainContainer from "@/components/site-header/SiteHeaderMainContainer";
 import SiteHeaderLogo from "@/components/site-header/SiteHeaderLogo";
-
+console.log(document.documentElement.clientWidth)
 </script>
 
 <style scoped>

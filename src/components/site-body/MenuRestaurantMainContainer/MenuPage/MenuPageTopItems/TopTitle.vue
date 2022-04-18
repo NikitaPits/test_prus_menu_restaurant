@@ -24,5 +24,7 @@ const props = defineProps({
   margin-right: 30px;
   align-items: center;
   display: flex;
+  width: 50%;
+  font-family: RockwellStd;
 }
 </style>
