@@ -53,7 +53,7 @@ export default {
   text-align: center;
   color: #fff;
   margin-top: 60px;
-  -webkit-text-size-adjust: inherit;
+  -webkit-text-size-adjust: 100%;
 }
 body{
   margin: 0;
@@ -76,5 +76,25 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+li{
+  margin-right: 2%;
+}
+h3 {
+  line-height: 1.26em;
+  font-size: 40px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+h6{
+  font-size: 15px;
 }
 </style>

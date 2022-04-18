@@ -2,7 +2,9 @@
   <li v-bind:class="[linkActive? 'menu-link-active': 'menu-link']"
       v-on:mouseleave="changeStyle()"
       v-on:mouseover="changeStyle()">
-  <slot></slot>
+  <a  v-bind:class="[linkActive? 'menu-link-active': 'menu-link']">
+    <slot></slot>
+  </a>
   </li>
 </template>
 
@@ -32,13 +34,14 @@ import {ref} from "vue";
   line-height: 1em;
   vertical-align: middle;
   width: 100%;
-  text-align: justify;
+  text-align: left;
+
 }
 .menu-link-active{
-  -webkit-box-align: center;
+  --webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: white;
+  color: #fff;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +53,8 @@ import {ref} from "vue";
   line-height: 1em;
   vertical-align: middle;
   width: 100%;
-  text-align: justify;
+  text-align: left;
+
+
 }
 </style>
