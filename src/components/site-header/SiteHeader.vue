@@ -1,8 +1,8 @@
 <template>
   <header class="header">
     <div class="header-wrapper">
-  <site-header-logo class="test">Logo</site-header-logo>
-  <site-header-main-container class="test">
+  <site-header-logo>Logo</site-header-logo>
+  <site-header-main-container>
   </site-header-main-container>
     </div>
   </header>
@@ -16,7 +16,6 @@ import SiteHeaderLogo from "@/components/site-header/SiteHeaderLogo";
 
 <style scoped>
 .header{
-  padding-top: 20px;
   align-items: center;
   background-color: #1f1917;
   position: fixed;
@@ -28,10 +27,12 @@ import SiteHeaderLogo from "@/components/site-header/SiteHeaderLogo";
 
 }
 .header-wrapper{
+  padding-top: 20px;
   margin-left: 13%;
   margin-right: 13%;
   justify-content: space-between;
   display: flex;
+  height: 90px;
 }
 .header:before{
   bottom: -55px;
@@ -43,7 +44,7 @@ import SiteHeaderLogo from "@/components/site-header/SiteHeaderLogo";
   opacity: .25;
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 25px;
   -webkit-transition: bottom .3s ease;
   transition: bottom .3s ease;
 }

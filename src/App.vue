@@ -20,7 +20,23 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "RockwellStd-Light";
+  src: local("RockwellStd-Light"),
+  url(./fonts/RockwellStd-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Muli-ExtraBold";
+  src: local("Muli-ExtraBold"),
+  url(./fonts/Muli-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "RockwellStd";
+  src: local("RockwellStd"),
+  url(./fonts/RockwellStd.otf) format("opentype");
+}
 .main-app{
+  font-family: RockwellStd-Light;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -37,6 +53,7 @@ export default {
   text-align: center;
   color: #fff;
   margin-top: 60px;
+  -webkit-text-size-adjust: inherit;
 }
 body{
   margin: 0;
@@ -45,5 +62,19 @@ body{
 html{
   margin: 0;
   padding: 0;
+  color: #fff;
+  font-family: RockwellStd-Light,serif;
+}
+*, :after, :before{
+  box-sizing: inherit;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 </style>

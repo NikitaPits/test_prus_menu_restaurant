@@ -17,7 +17,7 @@ export default {
 .menu-restaurant-main-container{
   padding-bottom: 91px;
   padding-top: 70px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 </style>

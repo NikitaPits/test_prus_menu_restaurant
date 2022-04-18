@@ -1,31 +1,22 @@
 <template>
-  <p v-bind:class="[itemActive&&!props.reset ? 'btn-cuisune-active':'btn-cuisune']"
-      v-on:click="changeStyle()"
+  <p v-bind:class="[props.panelItemState[props.name.id-1] ? 'btn-cuisune-active':'btn-cuisune']"
+      v-on:click="$emit('was-clicked', props.name.id)"
   >
     <slot></slot>
 
   </p>
-  <div>{{props.reset}}</div>
-  <div>{{itemActive}}</div>
 </template>
 
 <script setup>
-import {ref} from "vue";
 import {defineProps} from "vue";
 const props = defineProps({
-  reset:{value: String,
-    required: true}})
-let itemActive = ref(false)
-
-function changeStyle(){
-itemActive.value = !itemActive.value;
-  if(props.reset){
-    itemActive.value = false
-    console.log('itemActive.value')
-  }
-}
-
-
+  name:{value: Object,
+    required: true},
+  panelItemState:{
+    value: Object,
+    required:true
+    }
+})
 </script>
 
 <style scoped>
@@ -42,6 +33,7 @@ itemActive.value = !itemActive.value;
   text-transform: uppercase;
   -webkit-transition: opacity .5s ease,-webkit-transform .5s ease;
   transition: opacity .5s ease,transform .5s ease,-webkit-transform .5s ease;
+  z-index: 11;
 }
 .btn-cuisune-active {
   border: 4px solid #fff;

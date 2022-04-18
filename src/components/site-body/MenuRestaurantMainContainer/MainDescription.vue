@@ -31,6 +31,7 @@
   justify-content: space-between;
   flex-direction: row;
   max-width: 745px;
+  align-items: center;
 }
 .description-link{
   font-family: Muli-Bold;

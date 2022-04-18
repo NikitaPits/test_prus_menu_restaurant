@@ -20,21 +20,24 @@
 
 <style scoped>
 .main-container-selector{
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 12%;
+  margin-right: 12%;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 .menu-restaurant-head-selector{
   height: 82px;
   max-width: none;
-  z-index: 3;
+  z-index: 11;
   display: flex;
   background-color: rgba(20,9,6,.1);
   align-items: center;
 }
 .head-selector-title{
-color: whitesmoke;
+color: white;
+  font-size: 3.125rem;
+  z-index: 12;
 }
 .selector{
   margin-left: 0;
@@ -43,6 +46,7 @@ color: whitesmoke;
   display: flex;
   margin-right: 20px;
   align-items: center;
+  z-index: 10;
 }
 .selector:after {
   background-color: hsla(0,0%,100%,0);
@@ -54,5 +58,6 @@ color: whitesmoke;
   right: 4px;
   -webkit-transition: background-color .2s ease;
   transition: background-color .2s ease;
+  z-index: 10;
 }
 </style>

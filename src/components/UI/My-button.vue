@@ -2,7 +2,7 @@
 <button v-bind:class="[btnActive? 'btn-active' : 'btn']"
         v-on:mouseover="changeStyle()"
         v-on:mouseleave="changeStyle()">
-My button
+<slot></slot>
 </button>
 </template>
 

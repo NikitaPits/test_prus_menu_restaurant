@@ -60,9 +60,9 @@
     </svg>
     <div class="text">
       <span>
-        at
+        {{'at '}}
       </span>
-      THE SHARD
+       {{' THE SHARD'}}
     </div>
   </a>
 </template>
@@ -138,5 +138,13 @@ a {
   background-color: transparent;
   cursor: pointer;
 }
-
+span{
+  bottom: 4.5px;
+  font-family: Muli-Bold;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  position: relative;
+  text-transform: lowercase;
+}
 </style>

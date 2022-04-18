@@ -14,8 +14,4 @@ import MenuLink from "@/components/site-header/MenuLink";
 </script>
 
 <style scoped>
-.test{
-  display: flex;
-  justify-content: flex-end;
-}
 </style>

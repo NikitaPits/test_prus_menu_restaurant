@@ -22,5 +22,8 @@ import MenuRestaurantHeadSelector from "@/components/site-body/MenuRestaurantHea
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  z-index: 1;
+  background-color: #1f1917;
+  opacity: .7;
 }
 </style>

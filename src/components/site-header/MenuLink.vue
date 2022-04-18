@@ -32,15 +32,13 @@ import {ref} from "vue";
   line-height: 1em;
   vertical-align: middle;
   width: 100%;
-  margin-right: 41px;
-  z-index: 30;
   text-align: justify;
 }
 .menu-link-active{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #fff;
+  color: white;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,8 +50,6 @@ import {ref} from "vue";
   line-height: 1em;
   vertical-align: middle;
   width: 100%;
-  margin-right: 41px;
-  z-index: 30;
   text-align: justify;
 }
 </style>
