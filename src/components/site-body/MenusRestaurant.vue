@@ -12,5 +12,7 @@ import MenuRestaurantMainContainer from "@/components/site-body/MenuRestaurantMa
 .menu-restaurant-head{
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 </style>

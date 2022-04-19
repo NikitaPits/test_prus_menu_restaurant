@@ -51,7 +51,7 @@ let color ="#fff"
 .logo_header_top {
   display: block;
   position: relative;
-  margin-right: 5%;
+  margin-right: 60px;
   z-index: 30;
 }
 .site-header .logo_header_top svg {
